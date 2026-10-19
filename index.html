@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agastya Jeeshan | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="hero" id="home">
+        <div class="herotxt">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>AI & Data Science Student</span>
+            </div>
+            <h1>Welcome to My Portfolio</h1>
+            <p class="hero-tagline">Building <span class="typewriter-text"></span><span class="typewriter-cursor">|</span></p>
+            <div class="hero-socials">
+                <a href="https://www.linkedin.com/in/jeeshan-agastya-9b4421327/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/agastyajeeshan" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile" aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:agastyajeeshan@gmail.com" class="social-icon-btn" title="Send Email" aria-label="Email Address">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="hero-resume">
+                <a href="#" class="btn resume-btn" title="Resume">
+                    <i class="fas fa-file-alt"></i> Resume
+                </a>
+            </div>
+        </div>
+        <div class="heroimage">
+            <img src="hero-image.jpg" alt="Agastya Jeeshan">
+        </div>
+    </div>
+    <div class="about fade-in" id="about">
+        <h1>About me</h1>
+        <div class="ame">
+             <p>I am a computer science student specializing in <strong>Artificial Intelligence & Data Science</strong>. I love coding, solving problems, and building web applications that are responsive, accessible, and fast.</p>
+        </div>
+        <div class="aboutdetail">
+            <p>Hi, I’m <strong>Jeeshan</strong>, an AI & Data Science student who enjoys learning new technologies and turning ideas into useful, interactive solutions.</p>
+            <p>I’m passionate about <strong>AI, Machine Learning, Data Science, and Web Development</strong>. I work with technologies like <strong>Python, HTML, CSS, JavaScript, SQL, Excel, and Power BI</strong>, and I’m actively sharpening my skills in DSA and Applied AI/ML.</p>
+            <p>My goal is to grow as a <strong>technology professional</strong>, collaborate on meaningful projects, and build software that makes a real difference.</p>
+        </div>
+    </div>
+    <div class="skills fade-in" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-python"></i> Python</li>
+        </ul>
+    </div>
+    <div class="projects fade-in" id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card project1">
+                <div class="project-img-wrapper">
+                    <img src="relay-project.png" alt="Relay Community Preview" class="project-img">
+                </div>
+                <div class="project-content">
+                    <h3>Relay Community</h3>
+                    <p>A resource-sharing community platform connecting users to exchange unused books, tools, coupons, and gift cards.</p>
+                    <a href="https://relay-community-one.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn">View Live Project <i class="fas fa-external-link-alt" style="margin-left: 6px; font-size: 0.8rem;"></i></a>
+                </div>
+            </div>
+            <div class="project-card project2">
+                <div class="project-content">
+                    <h3>Project Two</h3>
+                    <p>A data visualization tool designed using Python and Pandas. Generates beautiful analytics and reports.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card project3">
+                <div class="project-content">
+                    <h3>Project Three</h3>
+                    <p>A personal portfolio template created using HTML5 and CSS3. Fast, semantic, and easy to configure.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact fade-in" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <p>Feel free to reach out for collaborations, job opportunities, or just a friendly chat!</p>
+                <p><strong>Email:</strong> agastyajeeshan@gmail.com</p>
+                <p><strong>Phone:</strong> +91 1234567890</p>
+            </div>
+            <div class="contact-form-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div id="formFeedback" class="form-feedback" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+    <button id="backToTop" class="back-to-top" title="Go to top">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
